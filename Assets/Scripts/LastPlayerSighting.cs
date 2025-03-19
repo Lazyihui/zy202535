@@ -79,7 +79,6 @@ public class LastPlayerSighting : MonoBehaviour
         if (position != resetPosition)
         {
             music.volume = Mathf.Lerp(music.volume, muteVolume, musicFadeSpeed * dt);
-            Debug.Log(music.volume);
             panicAudio.volume = Mathf.Lerp(panicAudio.volume, normalVolume, musicFadeSpeed * dt);
         }
         else
