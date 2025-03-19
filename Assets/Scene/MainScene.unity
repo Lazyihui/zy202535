@@ -60237,6 +60237,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1912340660}
+    - targetCorrespondingSourceObject: {fileID: 100088, guid: 3b059b06d05c0e04ba42674f84feac25,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1912340661}
   m_SourcePrefab: {fileID: 100100000, guid: 3b059b06d05c0e04ba42674f84feac25, type: 3}
 --- !u!1 &1912340656 stripped
 GameObject:
@@ -60398,6 +60402,21 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912340656}
   m_Enabled: 1
+--- !u!114 &1912340661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912340656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af384025aba68744da92ef0adf895a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shoutingClip: {fileID: 8300000, guid: f2e0ffd43812bf642a502c434b572c75, type: 3}
+  turnSmoothing: 15
+  speedDampTime: 0.1
 --- !u!4 &1912861091
 Transform:
   m_ObjectHideFlags: 0
@@ -61148,6 +61167,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9440ca4eae518a4c8ff0989348a96e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dyingState: 0
+  locomotionState: 0
+  shoutState: 0
+  deadBool: 0
+  speedFloat: 0
+  sneakingBool: 0
+  shoutingBool: 0
+  playerInSightBool: 0
+  shotFloat: 0
+  aimWeightFloat: 0
+  angularSpeedFloat: 0
+  openBool: 0
 --- !u!1 &2099672419
 GameObject:
   m_ObjectHideFlags: 0

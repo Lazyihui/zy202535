@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HashID : MonoBehaviour
+public class HashIDs : MonoBehaviour
 {
     public int dyingState;//表示 base Layer 中dying状态的时hash id
     public int locomotionState;//表示 base Layer 中locomotion状态的时hash id
