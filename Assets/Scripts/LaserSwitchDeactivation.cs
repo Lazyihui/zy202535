@@ -22,7 +22,6 @@ public class LaserSwitchDeactivation : MonoBehaviour
     {
         if (other.gameObject== player)
         {
-            Debug.Log("Player entered the trigger zone.");
             if (Input.GetButton("Switch"))
             {
                 LaserDeactivation();
