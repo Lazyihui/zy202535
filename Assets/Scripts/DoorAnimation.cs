@@ -16,7 +16,7 @@ public class DoorAnimation : MonoBehaviour
 
     void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindWithTag(Tags.Player);
         playerInventory = player.GetComponent<PlayerInventory>();
         hash = GameObject.FindWithTag(Tags.GameController).GetComponent<HashIDs>();
         anim = GetComponent<Animator>();
@@ -24,23 +24,24 @@ public class DoorAnimation : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("进入门");
         AudioSource audio = GetComponent<AudioSource>();
         if (other.gameObject == player)
         {
             if (requireKey )
             {
-                if(playerInventory.hasKey){
+                if(playerInventory.hasKey)
                     count++;
-                }else{
+                else{
                     audio.clip = accessDeniedClip;
                     audio.Play();
                 }
             }
             else
-            {
                 count++;
-            }
-        }else if(other.gameObject.tag == Tags.Enemy)
+        }
+        else if(other.gameObject.tag == Tags.Enemy)
+
         {
             if(other is CapsuleCollider)
             {

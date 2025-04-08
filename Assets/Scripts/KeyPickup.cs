@@ -10,6 +10,14 @@ public class KeyPickup : MonoBehaviour {
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        if(player == null)
+        {
+            Debug.LogError("没有找到玩家对象");
+        }
+        else
+        {
+            Debug.Log("找到玩家对象");
+        }
         playerInventory = player.GetComponent<PlayerInventory>();
     }
 
