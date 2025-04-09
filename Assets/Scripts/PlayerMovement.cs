@@ -65,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
         // 如果当前的动画状态是在跑步，那么就播放声音 animator.GetCurrentAnimatorStateInfo(0).nameHash == hash.locomotionState这个过时了
         if(animator.GetCurrentAnimatorStateInfo(0).fullPathHash == hash.locomotionState)
         {
+            
             if(!audioSource.isPlaying)
             {
                 audioSource.Play();

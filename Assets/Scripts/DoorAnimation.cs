@@ -24,7 +24,6 @@ public class DoorAnimation : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("进入门");
         AudioSource audio = GetComponent<AudioSource>();
         if (other.gameObject == player)
         {
